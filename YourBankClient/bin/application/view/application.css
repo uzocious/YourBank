@@ -1,0 +1,7 @@
+.startGUI{
+	-fx-background-image:url('../image/survey_background1.png');
+}
+
+.questionGUI{
+	-fx-background-image:url('../image/survey_background2.png');
+}

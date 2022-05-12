@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCatalogue" prefHeight="737.0" prefWidth="758.0" styleClass="main" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CatalogueController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="105.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/your_bank_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="319.0" layoutY="125.0" text="Server Status:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtServerStatus" alignment="CENTER" editable="false" focusTraversable="false" layoutX="300.0" layoutY="169.0" prefHeight="41.0" prefWidth="164.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnServerSwitch" layoutX="217.0" layoutY="273.0" mnemonicParsing="false" onAction="#serverSwitch" prefHeight="96.0" prefWidth="330.0" style="-fx-background-radius: 10px;" textFill="#e40808d6">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnalyseSurveyResult" layoutX="214.0" layoutY="437.0" mnemonicParsing="false" onAction="#goToQuestion1ChartPane" prefHeight="96.0" prefWidth="330.0" style="-fx-background-radius: 10px;" text="Analyse Survey Results" textFill="#520000db">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="308.0" layoutY="578.0" onAction="#goToServerInfoPane" text="Server Information" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="340.0" layoutY="639.0" onAction="#logOut" text="⮈ Logout">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="568.0" layoutY="13.0" text="Sys. Shut Down In:" textFill="#211f91">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="System will automatically shut &#10;down after the end of the&#10;count down." />
+         </tooltip>
+      </Label>
+      <Label fx:id="lblInactive" layoutX="702.0" layoutY="13.0" text="00:00" textFill="#4a2727">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="System will automatically shut &#10;down after the end of the&#10;count down." />
+         </tooltip>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="537.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/shut_down.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

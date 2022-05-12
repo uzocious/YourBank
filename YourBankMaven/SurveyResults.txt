@@ -1,0 +1,18 @@
+<--Basic Survey Analysis-->
+
+Total Number of Responses: 5
+
+1) What type of account are you applying for?
+Personal - 3 | Business - 2
+
+2) What type of product are you applying for?
+Current Account - 3 | Loan - 2 | Overdraft - 0
+
+3) Based on your experience, how likely would you recommend Your Bank to a friend?
+Extremely likely - 3 | Somewhat likely - 2 | Not at all likely - 0
+
+4) How easy was our portal to use today?
+Very easy - 0 | Somewhat easy - 3 | Very difficult - 2
+
+5) How satisfied are you with the overall service rendered to you today?
+Extremely satisfied - 0 | Somewhat satisfied - 3 | Not at all satisfied - 2

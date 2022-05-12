@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="473.0" prefWidth="767.0" styleClass="startGUI" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GUIController">
+   <children>
+      <Label layoutX="8.0" layoutY="209.0" text="Welcome and thank you.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="249.0" text="To help us improve our service, we would really appreciate if you could answer a few questions &#10;which should take only a few minutes. Your feedback is anonymous and confidential.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="8.0" layoutY="326.0" mnemonicParsing="false" onAction="#showQuestion1" prefHeight="39.0" prefWidth="147.0" style="-fx-background-radius: 5;" text="Start Survey" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button cancelButton="true" layoutX="174.0" layoutY="326.0" mnemonicParsing="false" onAction="#closeScene" prefHeight="39.0" prefWidth="147.0" style="-fx-background-radius: 5;" text="No, thanks">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="405.0" text="Average time taken to complete:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="405.0" text="2 minutes">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

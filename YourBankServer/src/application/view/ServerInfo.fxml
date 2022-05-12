@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneServerInfo" prefHeight="737.0" prefWidth="758.0" styleClass="main" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ServerInfoController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="105.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/your_bank_logo.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="657.0" layoutY="100.0" onAction="#goHome" text="⮝ Home">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="14.0" layoutY="143.0" text="Server Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="190.0" text="IP Address">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="175.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="220.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="265.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="310.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="355.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="400.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="445.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="490.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="535.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="580.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Separator layoutX="14.0" layoutY="625.0" prefHeight="12.0" prefWidth="728.0">
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Separator>
+      <Label layoutX="14.0" layoutY="235.0" text="Status">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="280.0" text="Country">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="325.0" text="Country Code">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="370.0" text="Region">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="415.0" text="Region Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="460.0" text="City">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="505.0" text="Zip">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="550.0" text="Time Zone">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="595.0" text="Organisation">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIPAddress" layoutX="364.0" layoutY="190.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" layoutX="364.0" layoutY="235.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCountry" layoutX="364.0" layoutY="280.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCountryCode" layoutX="363.0" layoutY="325.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegion" layoutX="363.0" layoutY="370.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegionName" layoutX="363.0" layoutY="415.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCity" layoutX="364.0" layoutY="460.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblZip" layoutX="363.0" layoutY="505.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTimeZone" layoutX="364.0" layoutY="550.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrganisation" layoutX="364.0" layoutY="595.0" text="N/A">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

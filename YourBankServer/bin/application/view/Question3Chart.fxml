@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneQuestion3Chart" prefHeight="737.0" prefWidth="758.0" styleClass="main" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Question3ChartController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="105.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/your_bank_logo.png" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="question3BarChart" layoutX="55.0" layoutY="149.0" prefHeight="533.0" prefWidth="649.0" title="How likely would you recommend Your Bank to a friend?">
+        <xAxis>
+          <CategoryAxis label="Answers" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Frequency" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Hyperlink layoutX="670.0" layoutY="682.0" onAction="#goNext" text="Next ⮞">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="21.0" layoutY="682.0" onAction="#goBack" text="⮜ Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="345.0" layoutY="104.0" text="Responses:" textFill="PURPLE" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblResponses" layoutX="436.0" layoutY="104.0" text="0" textFill="GREEN">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="657.0" layoutY="100.0" onAction="#goHome" text="⮝ Home">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

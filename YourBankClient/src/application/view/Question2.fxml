@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneQuestion2" prefHeight="737.0" prefWidth="758.0" styleClass="questionGUI" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GUIController">
+   <children>
+      <ProgressIndicator layoutX="575.0" layoutY="60.0" prefHeight="130.0" prefWidth="139.0" progress="0.2" />
+      <Label layoutX="34.0" layoutY="427.0" text="What type of product are you applying for?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdQ2Option1" layoutX="34.0" layoutY="490.0" mnemonicParsing="false" onAction="#showQuestion3" text="Current Account">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="grp2ndQuestion" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdQ2Option2" layoutX="34.0" layoutY="550.0" mnemonicParsing="false" onAction="#showQuestion3" text="Loan" toggleGroup="$grp2ndQuestion">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdQ2Option3" layoutX="34.0" layoutY="610.0" mnemonicParsing="false" onAction="#showQuestion3" text="Overdraft" toggleGroup="$grp2ndQuestion">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
